@@ -1,0 +1,12 @@
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem.csprojResolveAssemblyReference.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\TogVisWPF.g.cs
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem_MarkupCompile.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem_MarkupCompile.lref
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Debug\RevitAddinKeyNoteSystem.dll.config
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Debug\RevitAddinKeyNoteSystem.dll
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Debug\RevitAddinKeyNoteSystem.pdb
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\TogVisWPF.baml
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem.g.resources
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem.csproj.CoreCompileInputs.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem.dll
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Debug2014\RevitAddinKeyNoteSystem.pdb

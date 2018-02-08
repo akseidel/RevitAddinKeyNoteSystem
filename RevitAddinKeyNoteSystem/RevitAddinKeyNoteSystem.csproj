@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{06E527E4-E3FD-4012-BD46-078AD6BEF354}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RevitAddinKeyNoteSystem</RootNamespace>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\AKS\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2013\Program\Revit.exe</StartProgram>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2013\Program\Revit.exe</StartProgram>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>RevitAddinKeyNoteSystem</AssemblyName>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Release2014' or '$(Configuration)' == 'Debug2014'">
+      <ItemGroup>
+        <Reference Include="AdWindows">
+          <HintPath>C:\Program Files\Autodesk\Revit 2014\AdWindows.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="RevitAPI">
+          <HintPath>C:\Program Files\Autodesk\Revit 2014\RevitAPI.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="RevitAPIUI">
+          <HintPath>C:\Program Files\Autodesk\Revit 2014\RevitAPIUI.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="AdWindows">
+          <HintPath>C:\Program Files\Autodesk\Revit 2013\Program\AdWindows.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\Revit 2014\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\Revit 2014\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppKNS.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RevitHelpers.cs" />
+    <Compile Include="OpenKeyNoteSystemCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RevitAddinKeyNoteSystem.addin">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="keynotes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InfoLg.png" />
+    <EmbeddedResource Include="InfoSm.png" />
+    <EmbeddedResource Include="KeyNoteMan.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterClean">
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2014\RevitAddinKeyNoteSystem.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2013\RevitAddinKeyNoteSystem.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2014\RevitAddinKeyNoteSystem.dll" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\2013\RevitAddinKeyNoteSystem.dll" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>echo --- Post build events ---
+echo Attach digital signature to the dll:
+setlocal
+call "C:\Developer\This_CertA_Sign_EnvVar.bat"
+"C:\Program Files (x86)\Windows Kits\8.1\bin\x64\signtool.exe" sign /fd SHA256 /f "C:\Developer\This_CertificateA.pfx" /p "%25SIGNPASS%25" "$(TargetDir)$(TargetFileName)"
+endlocal
+
+echo Timestamp the signature:
+"C:\Program Files (x86)\Windows Kits\8.1\bin\x64\signtool.exe" timestamp /td SHA256 /tr "http://sha256timestamp.ws.symantec.com/sha256/" "$(TargetDir)$(TargetFileName)"
+echo ---
+echo Copy addin manifest file:
+echo Manifest file: about to copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
+copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
+echo Manifest file: about to copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2016"
+copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2016"
+echo ---
+echo Copy the addin dll file:
+xcopy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\REVIT\Addins\2015" /k /y /r
+xcopy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\REVIT\Addins\2016" /k /y /r
+echo ---
+echo About to copy the fresh builds to "c:\FreshBuilds" folder for distribution:
+md  "c:\FreshBuilds"
+xcopy "$(TargetDir)$(TargetFileName)" "c:\FreshBuilds" /k /y /r
+xcopy "$(ProjectDir)$(TargetName).addin" "c:\FreshBuilds" /k /y /r
+echo ---
+echo The new builds are at "c:\FreshBuilds".
+echo --- Done with post build events ---</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug2014' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+</Project>

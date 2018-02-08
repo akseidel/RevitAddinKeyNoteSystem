@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application RevitAddinKeyNoteSystem</Name>
+    <Assembly>RevitAddinKeyNoteSystem.dll</Assembly>
+    <FullClassName>RevitAddinKeyNoteSystem.AppKNS</FullClassName>
+    <ClientId>0DBE791E-4344-4888-8430-7675D866123C</ClientId>
+    <VendorId>AKS_</VendorId>
+    <VendorDescription>AKS, gmail akseidel</VendorDescription>
+  </AddIn>
+</RevitAddIns>

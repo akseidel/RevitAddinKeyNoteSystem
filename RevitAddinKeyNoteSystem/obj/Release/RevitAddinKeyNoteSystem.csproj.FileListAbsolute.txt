@@ -1,0 +1,22 @@
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinToWTA\obj\Release\RevitAddinKeyNoteSystem.csprojResolveAssemblyReference.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinToWTA\obj\Release\TogVisWPF.g.cs
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinToWTA\obj\Release\RevitAddinKeyNoteSystem_MarkupCompile.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinToWTA\obj\Release\RevitAddinKeyNoteSystem_MarkupCompile.lref
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Release\RevitAddinKeyNoteSystem.dll.config
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Release\RevitAddinKeyNoteSystem.dll
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Release\RevitAddinKeyNoteSystem.pdb
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\TogVisWPF.g.cs
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem_MarkupCompile.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem_MarkupCompile.lref
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\TogVisWPF.baml
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.g.resources
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.csproj.CoreCompileInputs.cache
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.dll
+E:\VSProjects\Revit\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.pdb
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Release\RevitAddinKeyNoteSystem.dll.config
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Release\RevitAddinKeyNoteSystem.dll
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\bin\Release\RevitAddinKeyNoteSystem.pdb
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.csprojResolveAssemblyReference.cache
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.csproj.CoreCompileInputs.cache
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.dll
+C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinKeyNoteSystem\RevitAddinKeyNoteSystem\obj\Release\RevitAddinKeyNoteSystem.pdb
