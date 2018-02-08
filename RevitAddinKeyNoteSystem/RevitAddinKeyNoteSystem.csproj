@@ -153,14 +153,14 @@ echo Timestamp the signature:
 "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\signtool.exe" timestamp /td SHA256 /tr "http://sha256timestamp.ws.symantec.com/sha256/" "$(TargetDir)$(TargetFileName)"
 echo ---
 echo Copy addin manifest file:
-echo Manifest file: about to copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
-copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
 echo Manifest file: about to copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2016"
+copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2015"
+echo Manifest file: about to copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2017"
 copy "$(ProjectDir)$(TargetName).addin" "$(AppData)\Autodesk\REVIT\Addins\2016"
 echo ---
 echo Copy the addin dll file:
-xcopy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\REVIT\Addins\2015" /k /y /r
 xcopy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\REVIT\Addins\2016" /k /y /r
+xcopy "$(TargetDir)$(TargetFileName)" "$(AppData)\Autodesk\REVIT\Addins\2017" /k /y /r
 echo ---
 echo About to copy the fresh builds to "c:\FreshBuilds" folder for distribution:
 md  "c:\FreshBuilds"

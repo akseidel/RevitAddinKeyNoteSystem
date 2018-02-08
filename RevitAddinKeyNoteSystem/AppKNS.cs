@@ -57,7 +57,7 @@ namespace RevitAddinKeyNoteSystem
                 // Assume error generated is due to "WTA" already existing
             }
             //   Create a push button in the ribbon panel 
-            PushButtonData pbData = new PushButtonData("KeyNoteEditor", "Key\nNote\nEditor", ExecutingAssemblyPath, ExecutingAssemblyName + ".OpenKeyNoteSystemCommand");
+            PushButtonData pbData = new PushButtonData("KeyNoteEditor", "KeyNote\nEditor", ExecutingAssemblyPath, ExecutingAssemblyName + ".OpenKeyNoteSystemCommand");
             PushButtonData pbDataA = new PushButtonData("Keynote", "KeyNote", ExecutingAssemblyPath, ExecutingAssemblyName + ".KeyNoteCommand");
             PushButtonData pbDataB = new PushButtonData("Update", "UpDate", ExecutingAssemblyPath, ExecutingAssemblyName + ".KeyNoteUpdate");
 
