@@ -1,4 +1,4 @@
-![](RevitAddinKeyNoteSystem/images/KNE_ribbon_panel_image1.jpg)
+![](RevitAddinKeyNoteSystem/Images/KNE_ribbon_panel_image1.jpg)
 # RevitAddinKeyNoteSystem
 The RevitAddinKeyNoteSystem is a Revit add-in that is the Revit ribbon component to the **WpfRevitUserKeynoteManager** application.
 
