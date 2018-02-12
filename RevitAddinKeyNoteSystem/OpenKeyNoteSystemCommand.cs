@@ -29,7 +29,7 @@ namespace RevitAddinKeyNoteSystem
                 UIDocument uidoc = uiapp.ActiveUIDocument;
                 Autodesk.Revit.ApplicationServices.Application app = uiapp.Application;
                 Document thisDoc = uidoc.Document;
-
+                
                 string _KNPath = string.Empty;
                 string _KNFile = string.Empty;
                 ModelPath mP = KeynoteTable.GetKeynoteTable(thisDoc).GetExternalFileReference().GetPath();
@@ -202,7 +202,7 @@ namespace RevitAddinKeyNoteSystem
         {
             // startup in help mode is rude and cude
             string hflag = "-h";
-            const string appKNManager = @"N:\\COMMON\\UTILS\\RevitKNManager\\WpfRevitUserKeynoteManager.exe";
+            string appKNManager = AppKNS.AppKNManager;
             try
             {
                 if (File.Exists(appKNManager))

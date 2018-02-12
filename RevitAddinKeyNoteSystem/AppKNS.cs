@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Windows.Forms;
 using System.Windows.Media.Imaging;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.UI;
@@ -11,26 +12,47 @@ namespace RevitAddinKeyNoteSystem
 {
     class AppKNS : IExternalApplication
     {
-        static string _path = typeof(Application).Assembly.Location;
+        static string _path = typeof(Autodesk.Revit.ApplicationServices.Application).Assembly.Location;
+        static string _appKNManager = Properties.Settings.Default.KNManagerFN;
         /// Singleton external application class instance.
         internal static AppKNS _app = null;
         /// Provide access to singleton class instance.
         public static AppKNS Instance {
             get { return _app; }
         }
-        ///// Provide access to the radio button state
-        //internal static string _pb_state = String.Empty;
-        //public static string PB_STATE {
-        //    get { return _pb_state; }
-        //}
-        ///// Provide access to the offset state
-        //internal static XYZ _pOffSet = new XYZ(1, 1, 0);
-        //public static XYZ POFFSET {
-        //    get { return _pOffSet; }
-        //}
+        /// <summary>
+        /// Return the KNManager application fullpathnane to run. This is being stored
+        /// in Properties.Settings.Default. If the name is blank or does not point to
+        /// a valid file then ask the user to find it. The choice will be saved to settings
+        /// and then returned.
+        /// </summary>
+        public static string AppKNManager{
+            get {
+                if (File.Exists(_appKNManager)) {
+                    return _appKNManager;
+                } else { // The external exectutable filename is not known.
+                    // Ask user to point to the application.
+                    OpenFileDialog oFD = new OpenFileDialog {
+                        Filter = "UserKeynoteManager File|*.exe",
+                        Title = "Please Find the UserKeynoteManager Program File (To Be Remembered)"
+                    };
+                    // Assume the selected file is it and save to settings. 
+                    if (oFD.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
+                        _appKNManager = oFD.FileName;
+                        Properties.Settings.Default.KNManagerFN = _appKNManager;
+                        Properties.Settings.Default.Save();
+                        return _appKNManager;
+                    } 
+                }
+                // fall through to nothing
+                return string.Empty;
+            }
+        }
+        
         public Result OnStartup(UIControlledApplication a)
         {
             _app = this;
+            _appKNManager = Properties.Settings.Default.KNManagerFN;
             AddKeyNoteSystem_This_Ribbon(a);
             return Result.Succeeded;
         }
@@ -39,7 +61,6 @@ namespace RevitAddinKeyNoteSystem
         {
             return Result.Succeeded;
         }
-
 
         public void AddKeyNoteSystem_This_Ribbon(UIControlledApplication a)
         {
@@ -92,9 +113,6 @@ namespace RevitAddinKeyNoteSystem
             pushButton.ToolTipImage = NewBitmapImage(System.Reflection.Assembly.GetExecutingAssembly(), ExecutingAssemblyName + ".KeyNoteMan.PNG");
 
             AddInfoSlideOut(thisNewRibbonPanelKN);
-
-
-
         } // AddKeyNoteSystem_This_Ribbon
 
         private void AddInfoSlideOut(RibbonPanel toThisRibbonPanel)
