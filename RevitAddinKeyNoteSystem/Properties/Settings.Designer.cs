@@ -22,5 +22,17 @@ namespace RevitAddinKeyNoteSystem.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("N:\\\\COMMON\\\\UTILS\\\\RevitKNManager\\\\WpfRevitUserKeynoteManager.exe")]
+        public string KNManagerFN {
+            get {
+                return ((string)(this["KNManagerFN"]));
+            }
+            set {
+                this["KNManagerFN"] = value;
+            }
+        }
     }
 }

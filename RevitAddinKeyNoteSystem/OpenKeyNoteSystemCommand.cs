@@ -29,7 +29,7 @@ namespace RevitAddinKeyNoteSystem
                 UIDocument uidoc = uiapp.ActiveUIDocument;
                 Autodesk.Revit.ApplicationServices.Application app = uiapp.Application;
                 Document thisDoc = uidoc.Document;
-
+                
                 string _KNPath = string.Empty;
                 string _KNFile = string.Empty;
                 ModelPath mP = KeynoteTable.GetKeynoteTable(thisDoc).GetExternalFileReference().GetPath();
@@ -202,7 +202,7 @@ namespace RevitAddinKeyNoteSystem
         {
             // startup in help mode is rude and cude
             string hflag = "-h";
-            const string appKNManager = @"N:\\COMMON\\UTILS\\RevitKNManager\\WpfRevitUserKeynoteManager.exe";
+            string appKNManager = AppKNS.AppKNManager;
             try
             {
                 if (File.Exists(appKNManager))
@@ -234,7 +234,15 @@ namespace RevitAddinKeyNoteSystem
                 }
                 else
                 {
-                    MessageBox.Show(appKNManager + " not found.", "Hello", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    string msg;
+                    if (appKNManager != string.Empty) {
+                        msg = "The application " + appKNManager + " we wanted to run looks like it does not exist.";
+                        MessageBox.Show(msg, "Oddly, Everything Ground To A Halt.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    } else
+                    {
+                        msg = "We wanted to run the editor application. But its name is totally blank.";
+                        MessageBox.Show(msg, "Falling Flat On Our Face. Bit The Dust.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
             }
             catch (Exception ex)

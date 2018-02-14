@@ -1,5 +1,9 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RevitAddinKeyNoteSystem.Properties" GeneratedClassName="Settings">
   <Profiles />
-  <Settings />
+  <Settings>
+    <Setting Name="KNManagerFN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">N:\\COMMON\\UTILS\\RevitKNManager\\WpfRevitUserKeynoteManager.exe</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
