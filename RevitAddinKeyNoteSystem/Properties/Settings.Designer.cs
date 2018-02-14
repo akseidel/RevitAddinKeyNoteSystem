@@ -34,29 +34,5 @@ namespace RevitAddinKeyNoteSystem.Properties {
                 this["KNManagerFN"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("300")]
-        public double FormMSG_Top {
-            get {
-                return ((double)(this["FormMSG_Top"]));
-            }
-            set {
-                this["FormMSG_Top"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("300")]
-        public double FormMSG_Left {
-            get {
-                return ((double)(this["FormMSG_Left"]));
-            }
-            set {
-                this["FormMSG_Left"] = value;
-            }
-        }
     }
 }
