@@ -21,7 +21,13 @@ The **WpfRevitUserKeynoteManager** repository is here: [WpfRevitUserKeynoteManag
 
 #### Details
 
-- As of this writing the path to the **WpfRevitUserKeynoteManager** application is hard coded in the **RevitAddinKeyNoteSystem** add-in.
+- The full pathname to the **WpfRevitUserKeynoteManager** application is soft coded in the **RevitAddinKeyNoteSystem** add-in as the "KNManager" setting in the RevitAddinKeyNoteSystem application's Properties.Settings.Default. The add-in checks the pathname's existence when the "KeyNote Editor" command button is pressed. If that pathname does not exist then a dialog shows asking to point to the **WpfRevitUserKeynoteManager** application. Whatever is selected then is stored in the user's Properties.Settings.Default to be retrieved the next time.
 - The **WpfRevitUserKeynoteManager** application has its own documentation feature. The **RevitAddinKeyNoteSystem** ribbon panel help button runs the **WpfRevitUserKeynoteManager** "in help mode" so to speak. That button assumes the **WpfRevitUserKeynoteManager** application is ***not*** running. That button will do nothing if the **WpfRevitUserKeynoteManager** application ***is*** running because **WpfRevitUserKeynoteManager** is a single running instance WPF application.  
 
-(unfinished documentation)
+#### Installation
+
+- Place the **WpfRevitUserKeynoteManager** application and its RTF instructions file at a path where users can access the application.
+- In VS Studio edit the Properties.Settings.Default.KNManager default setting for this RevitAddinKeyNoteSystem project to be the **WpfRevitUserKeynoteManager** application's full pathname. This optional step allows the add-in to innately know where the **WpfRevitUserKeynoteManager** application is.
+- In VS Studio edit the build events as needed. They are currently setup to sign the add-in so that Revit 2017 does not complain. Unless you know how to sign the application this way these build events will need to be removed. How the signing works is not going to be explained here. One set of build events places the add-in \*.dll and its \*.addin manifest file in a "FreshBuilds" folder. That has been found to be convenient.
+- In VS fix the reference locations and rebuild the application.
+- Place the add-in \*.dll and its \*.addin manifest file where Revit expects to find add-ins. There are a few places. %AppData%\\Roaming\\Autodesk\\Revit\\Addins\\\<yyyy\> is one.
