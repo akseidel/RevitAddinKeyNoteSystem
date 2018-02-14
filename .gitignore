@@ -49,7 +49,6 @@ build/
 
 # AKS Adding this
 .vscode/
-.v15/
 
 # Visual Studio 2015 cache/options directory
 .vs/
