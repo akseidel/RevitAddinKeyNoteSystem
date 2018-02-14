@@ -1,6 +1,0 @@
-C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinToWTA\RevitAddinToWTA\bin\Debug\RevitAddinToWTA.dll
-C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinToWTA\RevitAddinToWTA\bin\Debug\RevitAddinToWTA.pdb
-C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinToWTA\RevitAddinToWTA\obj\Debug\RevitAddinToWTA.VisTogForm2.resources
-C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinToWTA\RevitAddinToWTA\obj\Debug\RevitAddinToWTA.csproj.GenerateResource.Cache
-C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinToWTA\RevitAddinToWTA\obj\Debug\RevitAddinToWTA.dll
-C:\VS-Projects\Visual Studio 2010\Projects\RevitAddinToWTA\RevitAddinToWTA\obj\Debug\RevitAddinToWTA.pdb
