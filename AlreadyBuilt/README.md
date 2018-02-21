@@ -1,6 +1,4 @@
-![](../RevitAddinKeyNoteSystem/Images/KNE_ribbon_panel_image1.jpg)
-
-# AlreadyBuilt
+# AlreadyBuilt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](../RevitAddinKeyNoteSystem/Images/KNE_ribbon_panel_image1.jpg)
 
 File                          | Description
 ------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------
